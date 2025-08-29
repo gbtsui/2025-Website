@@ -1,0 +1,29 @@
+@import "class.css";
+
+body{
+  background-color: #263272;
+  color: black;
+  overflow: hidden;
+
+}
+
+.head{
+  display: flex;
+  width:auto;
+  height: 60px;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  position: sticky;
+  font-family: "Nunito", "lora";
+}
+
+.foot{
+  background-color: black;
+  color:white;
+  width:auto;
+  height: 350px;
+  position: relative;
+  text-align: center;
+  font-family: "Nunito", "lora";
+}
