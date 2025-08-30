@@ -28,10 +28,15 @@ body{
 
 .foot{
   background-color: black;
-  color:white;
+  color: white;
   width:auto;
   height: 350px;
   position: relative;
   text-align: center;
   font-family: "Nunito", "lora";
+}
+
+.credits{
+  position: relative;
+  top: 130px;
 }
