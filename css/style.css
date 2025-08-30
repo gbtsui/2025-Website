@@ -2,20 +2,28 @@
 
 body{
   background-color: #263272;
+  line-height: 1.6;
   color: black;
   overflow: hidden;
 
 }
 
 .head{
-  display: flex;
-  width:auto;
-  height: 60px;
-  align-items: center;
-  background-color: white;
-  justify-content: center;
-  position: sticky;
-  font-family: "Nunito", "lora";
+   width:auto;
+   height: 100px;
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   background-color: white;
+   text-align: center;
+ 
+    font-family: "Nunito", "lora";
+
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
 }
 
 .foot{
