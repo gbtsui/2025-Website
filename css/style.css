@@ -4,7 +4,6 @@ body{
   background-color: #263272;
   line-height: 1.6;
   color: black;
-  overflow: hidden;
 
 }
 
@@ -13,8 +12,21 @@ body{
    height: 100px;
    list-style: none;
    display: flex;
+   position: sticky;
    gap: 1.5rem;
    background-color: white;
+   text-align: center;
+  font-family: "Nunito", "lora";
+
+}
+
+.homepage{
+   width:auto;
+   height: 600px;
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   background-color: #3e5caa;
    text-align: center;
  
     font-family: "Nunito", "lora";
