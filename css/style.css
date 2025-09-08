@@ -13,7 +13,11 @@ body{
    list-style: none;
    display: flex;
    position: sticky;
+   top: 0px;
+   bottom: 10px;
+   left: 0px;
    gap: 1.5rem;
+   z-index: 99;
    background-color: white;
    text-align: center;
   font-family: "Nunito", "lora";
@@ -22,11 +26,12 @@ body{
 
 .homepage{
    width:auto;
-   height: 600px;
+   height: auto;
    list-style: none;
    display: flex;
    gap: 1.5rem;
    background-color: #3e5caa;
+   color: white;
    text-align: center;
  
     font-family: "Nunito", "lora";
