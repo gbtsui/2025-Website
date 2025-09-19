@@ -57,3 +57,20 @@ body{
   position: relative;
   top: 130px;
 }
+
+.team-member-img {
+    width: 5rem;
+    height: 5rem;
+    transition: border-color 0.2s, transform 0.3s;
+    border-radius: 9999px;
+    object-fit: cover;
+    border-width: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-color: #fff !important;
+    display: block;
+  }
+  .team-member-img:hover {
+    border-color: #f4802e !important;
+    transform: scale(1.2);
+  }
