@@ -20,13 +20,21 @@
   html {
     scroll-behavior: smooth;
   }
-  .team-member {
-    border-color: #fff !important;
+  .team-member-img {
+    width: 5rem;
+    height: 5rem;
     transition: border-color 0.2s, transform 0.3s;
+    border-radius: 9999px;
+    object-fit: cover;
+    border-width: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-color: #fff !important;
+    display: block;
   }
-  .team-member:hover {
+  .team-member-img:hover {
     border-color: #f4802e !important;
-    transform: scale(1.04);
+    transform: scale(1.2);
   }
 </style>
 </head>
@@ -122,52 +130,84 @@
         <div class="grid grid-cols-4 grid-rows-4 gap-6">
           <!-- adjust src and data description as needed -->
           <div class="flex items-center justify-center">
-            <img src="assets/SelenaNguyen.png" alt="Member 1" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Selena Nguyen</strong><br>Lead Organizer. Likes → Celeste & Hollow Knight ❤️<br>Grade 12 @ Orchard Park SS" />
+            <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/SelenaNguyen.png" alt="Member 1" class="team-member-img team-member" data-desc="<strong>Selena Nguyen</strong><br>Lead Organizer. Likes → Celeste & Hollow Knight ❤️<br>Grade 12 @ Orchard Park SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 2" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Maisy Thomas</strong><br>Lead Organizer. Likes → [blank]<br>Grade 12 @ St. Mary SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 2" class="team-member-img team-member" data-desc="<strong>Maisy Thomas</strong><br>Lead Organizer. Likes → [blank]<br>Grade 12 @ St. Mary SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 3" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>David Cosma</strong><br>Lead Web Developer. Likes → [blank]<br>Grade 12 @ Westmount SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 3" class="team-member-img team-member" data-desc="<strong>David Cosma</strong><br>Lead Web Developer. Likes → [blank]<br>Grade 12 @ Westmount SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/AaronDam.jpeg" alt="Member 4" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Aaron Dam</strong><br>Web Developer. Likes → Rhythm Games & Food 🎵<br>Grade 12 @ Westmount SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/AaronDam.jpeg" alt="Member 4" class="team-member-img team-member" data-desc="<strong>Aaron Dam</strong><br>Web Developer. Likes → Rhythm Games & Food 🎵<br>Grade 12 @ Westmount SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/Unimashi.jpg" alt="Member 5" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Unimashi Ugor</strong><br>Web Developer. Likes → Roller Coasters, Computer Systems & Retro Gaming 🧑‍💻<br>Grade 11 @ Bishop Ryan CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/Unimashi.jpg" alt="Member 5" class="team-member-img team-member" data-desc="<strong>Unimashi Ugor</strong><br>Web Developer. Likes → Roller Coasters, Computer Systems & Retro Gaming 🧑‍💻<br>Grade 11 @ Bishop Ryan CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/JasmineMontrichard.jpeg" alt="Member 6" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Jasmine Montrichard</strong><br>Logistics Lead. Likes → [blank]<br>Prev. @ St. Jean Brebeuf CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/JasmineMontrichard.jpeg" alt="Member 6" class="team-member-img team-member" data-desc="<strong>Jasmine Montrichard</strong><br>Logistics Lead. Likes → [blank]<br>Prev. @ St. Jean Brebeuf CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 7" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Gabriel Tsui</strong><br>Logistics Coordinator. Likes → [blank]<br>Grade 11 @ St. Mary CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 7" class="team-member-img team-member" data-desc="<strong>Gabriel Tsui</strong><br>Logistics Coordinator. Likes → [blank]<br>Grade 11 @ St. Mary CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 16" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Jacob</strong><br>Logistics Coordinator. Likes → [blank]<br>Grade 12 @ Bishop Ryan CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 16" class="team-member-img team-member" data-desc="<strong>Jacob</strong><br>Logistics Coordinator. Likes → [blank]<br>Grade 12 @ Bishop Ryan CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 8" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Joel Mathews</strong><br>Operations Lead. Likes → [blank]<br>Grade 12 @ Westmount SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 8" class="team-member-img team-member" data-desc="<strong>Joel Mathews</strong><br>Operations Lead. Likes → [blank]<br>Grade 12 @ Westmount SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 9" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Sam Dallaway</strong><br> Operations Coordinator. Likes → [blank]<br>Grade 12 @ Orchard Park SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 9" class="team-member-img team-member" data-desc="<strong>Sam Dallaway</strong><br> Operations Coordinator. Likes → [blank]<br>Grade 12 @ Orchard Park SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 10" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Rosan Syal</strong><br>Operations Coordinator. Likes → [blank]<br>Grade 11 @ Rosan Syal" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 10" class="team-member-img team-member" data-desc="<strong>Rosan Syal</strong><br>Operations Coordinator. Likes → [blank]<br>Grade 11 @ Rosan Syal" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 11" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Sukh Chana</strong><br>Marketing Lead. Likes → [blank]<br>Grade 12 @ Orchard Park SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 11" class="team-member-img team-member" data-desc="<strong>Sukh Chana</strong><br>Marketing Lead. Likes → [blank]<br>Grade 12 @ Orchard Park SS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 12" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Cameron Jacka</strong><br>Marketing Coordinator. Likes → [blank]<br>Grade 12 @ St. Mary CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 12" class="team-member-img team-member" data-desc="<strong>Cameron Jacka</strong><br>Marketing Coordinator. Likes → [blank]<br>Grade 12 @ St. Mary CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 13" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Marinel Gomez</strong><br>Marketing Coordinator. Likes → [blank]<br>Grade 10 @ St. Thomas More CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 13" class="team-member-img team-member" data-desc="<strong>Marinel Gomez</strong><br>Marketing Coordinator. Likes → [blank]<br>Grade 10 @ St. Thomas More CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 14" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Alexandra Lima</strong><br>Finance Lead. Likes → [blank]<br>Grade 12 @ St. Thomas More CSS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 14" class="team-member-img team-member" data-desc="<strong>Alexandra Lima</strong><br>Finance Lead. Likes → [blank]<br>Grade 12 @ St. Thomas More CSS" />
+            </a>
           </div>
           <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 15" class="w-20 h-20 transition-transform duration-300 hover:scale-140 rounded-full object-cover border-4 shadow-lg cursor-pointer team-member" data-desc="<strong>Nand Shah</strong><br>Finance Coordinator. Likes → Basketball & Hockey ⛹️<br>Grade 11 @ Westmount SS" />
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logo.webp" alt="Member 15" class="team-member-img team-member" data-desc="<strong>Nand Shah</strong><br>Finance Coordinator. Likes → Basketball & Hockey ⛹️<br>Grade 11 @ Westmount SS" />
+            </a>
           </div>
         </div>
       </div>
