@@ -33,19 +33,19 @@
        </a>
     </div>
 
-    <button class="text-2xl relative right-0 hover:bg-gray-300 h-25 w-30">
+    <button class="text-2xl relative right-0 hover:bg-gray-300 h-25 w-30" data-scroll="about-section">
       About
     </button>
-    <button class="text-2xl relative rigth-0 hover:bg-gray-300 h-25 w-30">
+    <button class="text-2xl relative rigth-0 hover:bg-gray-300 h-25 w-30" data-scroll="sponsors-section">
       Sponsors
     </button>
-    <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30">
+    <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30" data-scroll="schedule-section">
       Schedule
     </button>
-    <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30"> 
+    <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30" data-scroll="faq-section">
       FAQ
     </button>
-    <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30" onclick="location.href='#team-section'">
+    <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30" data-scroll="team-section">
       Team
     </button>
     <button class="text-2xl relative left-0 hover:bg-gray-300 h-25 w-30">
@@ -181,31 +181,43 @@
       </div>
   </div>
   <script>
-    // hover logic for team members
-    document.querySelectorAll('.team-member').forEach(function(img) {
-      img.addEventListener('mouseenter', function() {
-        // parsing
-        var desc = img.getAttribute('data-desc');
-        var tempDiv = document.createElement('div');
-        tempDiv.innerHTML = desc;
-        var name = tempDiv.querySelector('strong') ? tempDiv.querySelector('strong').innerText : '';
-        var lines = desc.split('<br>');
-        var role = lines[1] ? lines[1].split('.')[0] : '';
-        var bio = lines[1] ? lines[1].substring(lines[1].indexOf('.')+1).trim() : '';
-        var school = lines[2] ? lines[2].trim() : '';
-        document.getElementById('team-desc-name').innerText = name;
-        document.getElementById('team-desc-role').innerText = role;
-        document.getElementById('team-desc-school').innerText = school;
-        document.getElementById('team-desc-bio').innerText = bio;
-      });
-      img.addEventListener('mouseleave', function() {
-        document.getElementById('team-desc-name').innerText = 'Hover over a team member';
-        document.getElementById('team-desc-role').innerText = 'to see their role.';
-        document.getElementById('team-desc-school').innerText = 'School info will appear here.';
-        document.getElementById('team-desc-bio').innerText = 'Their interests will appear here.';
-      });
+  // smooth scroll for buttons with data-scroll
+  document.querySelectorAll('button[data-scroll]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var targetId = btn.getAttribute('data-scroll');
+      var target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
-  </script>
+  });
+
+  // hover logic for team members
+  document.querySelectorAll('.team-member').forEach(function(img) {
+    img.addEventListener('mouseenter', function() {
+      // parsing
+      var desc = img.getAttribute('data-desc');
+      var tempDiv = document.createElement('div');
+      tempDiv.innerHTML = desc;
+      var name = tempDiv.querySelector('strong') ? tempDiv.querySelector('strong').innerText : '';
+      var lines = desc.split('<br>');
+      var role = lines[1] ? lines[1].split('.')[0] : '';
+      var bio = lines[1] ? lines[1].substring(lines[1].indexOf('.')+1).trim() : '';
+      var school = lines[2] ? lines[2].trim() : '';
+      document.getElementById('team-desc-name').innerText = name;
+      document.getElementById('team-desc-role').innerText = role;
+      document.getElementById('team-desc-school').innerText = school;
+      document.getElementById('team-desc-bio').innerText = bio;
+    });
+    img.addEventListener('mouseleave', function() {
+      document.getElementById('team-desc-name').innerText = 'Hover over a team member';
+      document.getElementById('team-desc-role').innerText = 'to see their role.';
+      document.getElementById('team-desc-school').innerText = 'School info will appear here.';
+      document.getElementById('team-desc-bio').innerText = 'Their interests will appear here.';
+    });
+  });
+</script>
 </body>
 </html>
 
