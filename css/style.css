@@ -2,28 +2,89 @@
 
 body{
   background-color: #263272;
+  line-height: 1.6;
   color: black;
-  overflow: hidden;
 
 }
 
 .head{
-  display: flex;
-  width:auto;
-  height: 60px;
-  align-items: center;
-  background-color: white;
-  justify-content: center;
-  position: sticky;
+   width:auto;
+   height: 100px;
+   list-style: none;
+   display: flex;
+   position: sticky;
+   top: 0px;
+   bottom: 10px;
+   left: 0px;
+   gap: 1.5rem;
+   z-index: 99;
+   background-color: white;
+   text-align: center;
   font-family: "Nunito", "lora";
+
+}
+
+.homepage{
+   width:auto;
+   height: auto;
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   background-color: #3e5caa;
+   color: white;
+   text-align: center;
+ 
+    font-family: "Nunito", "lora";
+
+}
+
+.glowing-text{
+   color: black;
+   text-shadow:
+   0 0 5px #fff, 
+   0 0 10px #0073e6, 
+   0 0 20px #0073e6,
+   0 0 30px #0073e6,
+   0 0 40px #0073e6;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
 }
 
 .foot{
   background-color: black;
-  color:white;
+  color: white;
   width:auto;
   height: 350px;
   position: relative;
   text-align: center;
   font-family: "Nunito", "lora";
+}
+
+ .signature-img {
+    max-width: 300px; 
+    height: auto; 
+    margin-top: 20px; 
+  }
+
+ @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.slide-in {
+  animation: slideIn 2s ease-in-out forwards;
+}
+
+.credits{
+  position: relative;
+  top: 130px;
 }
