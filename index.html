@@ -16,11 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+
 </head>
 <body>
   <body class="main">
@@ -107,19 +103,51 @@
   <div class="schedule">
     
   </div>
-  <div class="FAQ">
-
-  </div>
-  
-  
-    <section id="sponsors">
-  <div class="sponsor">
+  <div class="location">
     
   </div>
+  <!-- FAQ section start -->
+  <section class="faq-section flex flex-col items-center justify-center w-full py-16 bg-white" id="faq-section">
+    <h2 class="text-4xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+    <div class="faq-grid flex justify-center w-full" style="padding-left:200px; padding-right:200px;">
+      <div class="grid grid-cols-2 grid-rows-4 gap-12 w-full max-w-6xl">
+        <!-- FAQ items -->
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="0">What is a hackathon?</div>
+          <div class="faq-answer">A hackathon is a collaborative event where participants build projects and solve problems using technology, often within a limited time frame.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="1">Who can participate?</div>
+          <div class="faq-answer">HammerHacks is open to all Hamilton high-school students, regardless of experience level.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="2">Do I need coding experience?</div>
+          <div class="faq-answer">No prior coding experience is required! We welcome beginners and provide workshops to help you get started.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="3">How much does it cost?</div>
+          <div class="faq-answer">Participation is free! Just bring your creativity and enthusiasm.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="4">What should I bring?</div>
+          <div class="faq-answer">Bring a laptop, charger, and any materials you need for your project. Snacks and meals will be provided.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="5">Can I work in a team?</div>
+          <div class="faq-answer">Yes! Teams of up to 4 are encouraged, but you're free to work alone if you wish. You can form a team before or during the event.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="6">What if I don't have a team?</div>
+          <div class="faq-answer">No worries! We'll help you find teammates at the event if you'd like to join a group.</div>
+        </div>
+        <div class="faq-item flex items-center relative">
+          <div class="faq-ring" data-faq="7">How do I register?</div>
+          <div class="faq-answer">Click the Register button at the top of the page and fill out the form to secure your spot.</div>
+        </div>
+      </div>
+    </div>
   </section>
-  
-  
-  
+  <!-- FAQ section end -->
   <div class="team">
   
 	
@@ -218,33 +246,32 @@
       </div>
   </div>
   <script>
-    // hover logic for team members
-    document.querySelectorAll('.team-member').forEach(function(img) {
-      img.addEventListener('mouseenter', function() {
-        // parsing
-        var desc = img.getAttribute('data-desc');
-        var tempDiv = document.createElement('div');
-        tempDiv.innerHTML = desc;
-        var name = tempDiv.querySelector('strong') ? tempDiv.querySelector('strong').innerText : '';
-        var lines = desc.split('<br>');
-        var role = lines[1] ? lines[1].split('.')[0] : '';
-        var bio = lines[1] ? lines[1].substring(lines[1].indexOf('.')+1).trim() : '';
-        var school = lines[2] ? lines[2].trim() : '';
-        document.getElementById('team-desc-name').innerText = name;
-        document.getElementById('team-desc-role').innerText = role;
-        document.getElementById('team-desc-school').innerText = school;
-        document.getElementById('team-desc-bio').innerText = bio;
+  // FAQ expand/collapse logic
+  document.querySelectorAll('.faq-ring').forEach(function(ring, idx) {
+    ring.addEventListener('click', function() {
+      var item = ring.parentElement;
+      var answer = item.querySelector('.faq-answer');
+      var expanded = item.classList.contains('expanded');
+      // Collapse all others
+      document.querySelectorAll('.faq-item').forEach(function(i) {
+        i.classList.remove('expanded');
       });
-      img.addEventListener('mouseleave', function() {
-        document.getElementById('team-desc-name').innerText = 'Hover over a team member';
-        document.getElementById('team-desc-role').innerText = 'to see their role.';
-        document.getElementById('team-desc-school').innerText = 'School info will appear here.';
-        document.getElementById('team-desc-bio').innerText = 'Their interests will appear here.';
-      });
+      if (!expanded) {
+        item.classList.add('expanded');
+      }
+    });
+  });
+  // smooth scroll for buttons with data-scroll
+  document.querySelectorAll('button[data-scroll]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var targetId = btn.getAttribute('data-scroll');
+      var target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   </script>
 </body>
 
-
 </html>
-
