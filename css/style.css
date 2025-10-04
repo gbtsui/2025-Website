@@ -38,6 +38,14 @@ body{
 
 }
 
+.schedule{
+   width:auto;
+   height: auto;
+   position: relative;
+   background-color: black;
+   color: white;
+}
+
 .logo img{
     height: 50px;
     width: auto;
