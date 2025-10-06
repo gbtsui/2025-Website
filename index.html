@@ -18,8 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
-  <body class="main">
+<body class="main">
   <div class="head relative" id="header">
    
     <div class="logo pl-6 pr-4 flex items-center">
@@ -48,7 +47,7 @@
       Support
     </button>
     <button class="slide-in absolute right-0 top-5 mr-4 text-3xl h-13 w-35 rounded-3xl font-bold bg-orange-400 border-orange-400 hover:bg-blue-800 text-white  border-8   hover:border-blue-800">
-      Sign Up
+      Donate
     </button>
   </div>
   <div class="homepage">
@@ -58,8 +57,8 @@
        </a>
       <div class="slide-in relative bottom-15">
         <h1 class="slide-in text-4xl font-bold text-yellow-500">A High School Hackathon where you can present your amazing ideas with technology!</h1>
-        <h1 class="slide-in text-4xl font-bold">??? 2026</h1>
-        <h1 class="slide-in text-4xl font-bold">Location ???</h1>
+        <h1 class="slide-in text-4xl font-bold">Winter 2026</h1>
+        <h1 class="slide-in text-4xl font-bold">Hamilton, Ontario</h1>
       </div>
 
   
@@ -155,79 +154,76 @@
   
   
     <!-- team sect start -->
-    <section class="flex flex-row w-full h-[600px] bg-gray-100 mt-12 slide-in" id="team-section">
-      <!-- description on left -->
-      <div class="w-1/2 flex items-center justify-center">
-        <div class="text-center p-8">
-          <h2 class="text-3xl font-bold mb-4">Made with ❤ by the HammerHacks team </h2>
-          <div id="team-desc" class="text-lg text-gray-700 min-h-[120px] flex items-center justify-center">
-            <div id="team-desc-content" class="w-full">
-              <div class="flex flex-col items-center">
-                <span class="font-bold text-2xl" id="team-desc-name">Hover over a team member</span>
-                <span class="text-xl text-gray-600 mt-1" id="team-desc-role">to see their role.</span>
-                <span class="text-lg text-blue-700 mt-1" id="team-desc-school">School info will appear here.</span>
-              </div>
-              <div class="slide-in mt-6 text-base text-gray-700 text-center" id="team-desc-bio">Their description will appear here.</div>
+    <section class="flex flex-col w-full bg-gray-100 mt-12 slide-in items-center" id="team-section">
+      <!-- description centered above -->
+      <div class="w-full flex flex-col items-center justify-center mb-8" style="padding-top:32px;">
+        <h2 class="text-3xl font-bold mb-4">Made with ❤ by the HammerHacks team </h2>
+        <div id="team-desc" class="text-lg text-gray-700 min-h-[120px] flex items-center justify-center">
+          <div id="team-desc-content" class="w-full">
+            <div class="flex flex-col items-center">
+              <span class="font-bold text-2xl" id="team-desc-name">Hover over a team member</span>
+              <span class="text-xl text-gray-600 mt-1" id="team-desc-role">to see their role.</span>
+              <span class="text-lg text-blue-700 mt-1" id="team-desc-school">School info will appear here.</span>
             </div>
+            <div class="slide-in mt-6 text-base text-gray-700 text-center" id="team-desc-bio">Their description will appear here.</div>
           </div>
         </div>
       </div>
-      <!-- team on right: can update num of circles accordingly -->
-      <div class="w-1/2 flex items-center justify-center">
-        <div class="grid grid-cols-4 grid-rows-4 gap-6">
+      <!-- team members in a centered line -->
+      <div class="w-full flex items-center justify-center">
+        <div class="flex flex-row flex-wrap gap-6 justify-center items-center" style="width:100%; border-top:2px solid #e5e7eb; padding-top:32px; padding-bottom:32px;">
           <!-- adjust src and data description as needed -->
-          <div class="flex items-center justify-center">
-            <img src="assets/SelenaNguyen.png" alt="Member 1" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Selena Nguyen</strong><br>Lead Organizer. Likes → Celeste & Hollow Knight ❤️<br>Grade 12 @ Orchard Park SS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 2" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Maisy Thomas</strong><br>Lead Organizer. Likes → [blank]<br>Grade 12 @ St. Mary SS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 3" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>David Cosma</strong><br>Lead Web Developer. Likes → Board Games & Math <br>Grade 12 @ Westmount SS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <a href="https://www.linkedin.com/in/aaron-dam-a798512a5/" target="_blank" rel="noopener noreferrer">
-              <img src="assets/AaronDam.jpeg" alt="Member 4" class="team-member-img team-member" data-desc="<strong>Aaron Dam</strong><br>Web Developer. Likes → Rhythm Games & Food 🎵<br>Grade 12 @ Westmount SS" />
-            </a>
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/Unimashi.jpg" alt="Member 5" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Unimashi Ugor</strong><br>Web Developer. Likes → Roller Coasters, Computer Systems & Retro Gaming 🧑‍💻<br>Grade 11 @ Bishop Ryan CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/JasmineMontrichard.jpeg" alt="Member 6" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Jasmine Montrichard</strong><br>Logistics Lead. Likes → [blank]<br>Prev. @ St. Jean Brebeuf CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 7" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Gabriel Tsui</strong><br>Logistics Coordinator. Likes → [blank]<br>Grade 11 @ St. Mary CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 16" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Jacob</strong><br>Logistics Coordinator. Likes → [blank]<br>Grade 12 @ Bishop Ryan CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 8" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Joel Mathews</strong><br>Operations Lead. Likes → [blank]<br>Grade 12 @ Westmount SS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 9" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Sam Dallaway</strong><br> Operations Coordinator. Likes → [blank]<br>Grade 12 @ Orchard Park SS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 10" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Rosan Syal</strong><br>Operations Coordinator. Likes → [blank]<br>Grade 11 @ Rosan Syal" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 11" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Sukh Chana</strong><br>Marketing Lead. Likes → [blank]<br>Grade 12 @ Orchard Park SS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 12" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Cameron Jacka</strong><br>Marketing Coordinator. Likes → [blank]<br>Grade 12 @ St. Mary CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 13" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Marinel Gomez</strong><br>Marketing Coordinator. Likes → [blank]<br>Grade 10 @ St. Thomas More CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 14" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Alexandra Lima</strong><br>Finance Lead. Likes → [blank]<br>Grade 12 @ St. Thomas More CSS" />
-          </div>
-          <div class="flex items-center justify-center">
-            <img src="assets/logo.webp" alt="Member 15" class="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg cursor-pointer team-member" data-desc="<strong>Nand Shah</strong><br>Finance Coordinator. Likes → Basketball & Hockey ⛹️<br>Grade 11 @ Westmount SS" />
-          </div>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/SelenaNguyen.png" alt="Member 1" class="team-member-img team-member" data-desc="<strong>Selena Nguyen</strong><br>Lead Organizer Likes → Celeste & Hollow Knight<br>Grade 12 @ Orchard Park SS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/MaisyThomas.jpg" alt="Member 2" class="team-member-img team-member" data-desc="<strong>Maisy Thomas</strong><br>Lead Organizer Likes → Swimming & Climbing<br>Grade 12 @ St. Mary SS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logo.webp" alt="Member 3" class="team-member-img team-member" data-desc="<strong>David Cosma</strong><br>Lead Web Developer Likes → Board Games & Raspberries <br>Grade 12 @ Westmount SS" />
+          </a>
+          <a href="https://www.linkedin.com/in/aaron-dam-a798512a5/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/AaronDam.jpeg" alt="Member 4" class="team-member-img team-member" data-desc="<strong>Aaron Dam</strong><br>Web Developer Likes → Boba & Peanut Butter <br>Grade 12 @ Westmount SS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/Unimashi.jpg" alt="Member 5" class="team-member-img team-member" data-desc="<strong>Unimashi Ugor</strong><br>Web Developer Likes → Roller Coasters, Computer Systems & Retro Gaming <br>Grade 11 @ Bishop Ryan CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/jasminemontrichard/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/JasmineMontrichard.jpeg" alt="Member 6" class="team-member-img team-member" data-desc="<strong>Jasmine Montrichard</strong><br>Logistics Lead Likes → Philosophy & Economics, Technology, Event Organizing, Drawing<br>Prev. @ St. Jean Brebeuf CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/GabrielTsui.jpg" alt="Member 7" class="team-member-img team-member" data-desc="<strong>Gabriel Tsui</strong><br>Logistics Coordinator Likes → Philosophy, Art, Rhythm Games, Calisthenics<br>Grade 11 @ St. Mary CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/JacobCanlas.PNG" alt="Member 16" class="team-member-img team-member" data-desc="<strong>Jacob Canlas</strong><br>Logistics Coordinator Likes → Pokémon, Dinosaurs, Cats, Manga/Manhwa, Laufey, W2E <br>Grade 12 @ Bishop Ryan CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/joel-mathews-4009a5311/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/JoelMathews.jpg" alt="Member 8" class="team-member-img team-member" data-desc="<strong>Joel Mathews</strong><br>Operations Lead Likes → Hotpot & Iced Tea<br>Grade 12 @ Westmount SS" />
+          </a>
+          <a href="https://ca.linkedin.com/in/samantha-dallaway-2739b8369 " target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/SamDallaway.png" alt="Member 9" class="team-member-img team-member" data-desc="<strong>Sam Dallaway</strong><br> Operations Coordinator Likes → Minesweeper & Hot Chocolate<br>Grade 12 @ Orchard Park SS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/RosanSyal.png" alt="Member 10" class="team-member-img team-member" data-desc="<strong>Rosan Syal</strong><br>Operations Coordinator Likes → The Legend of Zelda & Gaming<br>Grade 11 @ Rosan Syal" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/logo.webp" alt="Member 11" class="team-member-img team-member" data-desc="<strong>Sukh Chana</strong><br>Marketing Lead Likes → Poutine & Tyler the Creator <br>Grade 12 @ Orchard Park SS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/CameronJ.PNG" alt="Member 12" class="team-member-img team-member" data-desc="<strong>Cameron Jacka</strong><br>Marketing Coordinator Likes → Robotics & Camping <br>Grade 12 @ St. Mary CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/MerinelGomez.jpg" alt="Member 13" class="team-member-img team-member" data-desc="<strong>Marinel Gomez</strong><br>Marketing Coordinator Likes → Cats, Art, Writing, Drama <br>Grade 10 @ St. Thomas More CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/AlexandraLima.png" alt="Member 14" class="team-member-img team-member" data-desc="<strong>Alexandra Lima</strong><br>Finance Lead Likes → Music, Tennis, Nintendo Games<br>Grade 12 @ St. Thomas More CSS" />
+          </a>
+          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/headshots/NandShah.png" alt="Member 15" class="team-member-img team-member" data-desc="<strong>Nand Shah</strong><br>Finance Coordinator Likes → Basketball & Hockey<br>Grade 11 @ Westmount SS" />
+          </a>
         </div>
       </div>
+    </section>
     </section>
     <!-- team sect end -->
   <div class="foot" id="footer">
@@ -240,11 +236,11 @@
     <p class="text-1xl relative top-15 font-[Roboto]">For any inquiries, please email us at <a href="mailto:info@hammerhacks.ca" class="underline text-orange-500">info&commat;hammerhacks.ca</a></p>
 
       <div class="credits">
-            <p>Made with <span class="pink">❤</span> by the HammerHacks Development Team</p>
             <p class="font-[Roboto]">Our <a href="https://github.com/HammerHacks/2025-Website" class="underline text-orange-400">website</a> and <a href="https://hcb.hackclub.com/hammerhacks" class="underline text-green-500">finances</a> are open</p>
             <p class="hcb">HammerHacks is fiscally sponsored by The Hack Foundation (d.b.a. <a href="https://hackclub.com/hcb">Hack Club</a>), a 501(c)(3) nonprofit (EIN: 81-2908499)</p>
       </div>
   </div>
+  
   <script>
   // FAQ expand/collapse logic
   document.querySelectorAll('.faq-ring').forEach(function(ring, idx) {
@@ -261,6 +257,49 @@
       }
     });
   });
+
+  // Team member hover logic
+  var teamMembers = document.querySelectorAll('.team-member');
+  var nameEl = document.getElementById('team-desc-name');
+  var roleEl = document.getElementById('team-desc-role');
+  var schoolEl = document.getElementById('team-desc-school');
+  var bioEl = document.getElementById('team-desc-bio');
+
+  teamMembers.forEach(function(member) {
+    member.addEventListener('mouseenter', function() {
+      var desc = member.getAttribute('data-desc');
+      if (desc) {
+        var tempDiv = document.createElement('div');
+        tempDiv.innerHTML = desc;
+        var strong = tempDiv.querySelector('strong');
+        var rest = tempDiv.innerHTML.replace(/<strong>.*?<\/strong><br>/, '').split('<br>');
+        var roleAndDesc = rest[0] || '';
+        var school = rest[1] || '';
+        var role = '';
+        var bio = '';
+        // Split at 'Likes →' if present
+        var likesIdx = roleAndDesc.indexOf('Likes →');
+        if (likesIdx !== -1) {
+          role = roleAndDesc.substring(0, likesIdx).trim();
+          bio = roleAndDesc.substring(likesIdx).trim();
+        } else {
+          role = roleAndDesc;
+          bio = '';
+        }
+        nameEl.innerHTML = strong ? strong.textContent : '';
+        roleEl.innerHTML = role;
+        schoolEl.innerHTML = school;
+        bioEl.innerHTML = bio;
+      }
+    });
+    member.addEventListener('mouseleave', function() {
+      nameEl.innerHTML = 'Hover over a team member';
+      roleEl.innerHTML = 'to see their role.';
+      schoolEl.innerHTML = 'School info will appear here.';
+      bioEl.innerHTML = 'Their description will appear here.';
+    });
+  });
+
   // smooth scroll for buttons with data-scroll
   document.querySelectorAll('button[data-scroll]').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -271,6 +310,8 @@
         target.scrollIntoView({ behavior: 'smooth' });
       }
     });
+  });
+  
   </script>
 </body>
 
