@@ -94,16 +94,30 @@ html {
 
 .homepage{
    width:auto;
-   height: auto;
+   height: 700px;
    list-style: none;
    display: flex;
    gap: 1.5rem;
+   background-image: url('../assets/background.webp');
    background-color: #3e5caa;
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-size: cover;
    color: white;
    text-align: center;
  
     font-family: "Nunito", "lora";
 
+}
+
+.Recap{
+  width: auto;
+  height: auto;
+  background-color: #263272;
+  color: white;
+  text-align: center;
+
+  font-family: "Nunito", "Roboto";
 }
 
 .glowing-text{
@@ -114,6 +128,16 @@ html {
    0 0 20px #0073e6,
    0 0 30px #0073e6,
    0 0 40px #0073e6;
+}
+
+.glowing-text-yellow{
+   color: black;
+   text-shadow:
+   0 0 5px #fff, 
+   0 0 10px #fee000, 
+   0 0 20px #fee000,
+   0 0 30px #fee000,
+   0 0 40px #fee000;
 }
 
 .logo img{
