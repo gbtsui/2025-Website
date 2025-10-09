@@ -179,10 +179,13 @@ html {
 }
 
  .signature-img {
-    max-width: 300px; 
+    max-width: 500px; 
     height: auto; 
     margin-top: 20px; 
+	position:left;
   }
+  
+   
 
  @keyframes slideIn {
     0% {
@@ -220,3 +223,7 @@ html {
     border-color: #f4802e !important;
     transform: scale(1.2);
   }
+  
+  .caps {
+  text-transform: uppercase;
+}
