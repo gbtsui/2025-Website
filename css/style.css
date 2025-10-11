@@ -5,6 +5,7 @@
     height: auto;
     gap: 0.5rem;
     padding: 8px 0;
+    background-color: white;
   }
   .logo img {
     height: 40px;
@@ -249,7 +250,7 @@ html {
 }
 
 body, .main, .head, .homepage, .about-us, .faq-section, .faq-grid, .faq-item, .team, .team-section, .team-member-img, .Recap, .schedule, .location, .glowing-text, .glowing-text-yellow {
-  font-family: "Fuzzy Bubbles", cursive !important;
+  font-family: "Nunito", "lora" !important;
 
 .homepage{
    width:auto;
