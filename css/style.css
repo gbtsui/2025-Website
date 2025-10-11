@@ -198,7 +198,8 @@ html {
 }
 
 .head{
-  color:#fff;
+  color: black;
+  background-color: white;
    width:auto;
    height: 100px;
    list-style: none;
