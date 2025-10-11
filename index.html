@@ -16,6 +16,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body class="main caps">
@@ -27,26 +30,32 @@
           class="h-14 w-auto max-w-[160px] transition-transform duration-300 hover:scale-105 drop-shadow-md rounded-md" />
        </a>
     </div>
-
-    <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">
-      <a href="#about"> About</a>
-    </button>
-    <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">
-      Sponsors
-    </button>
-    <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">
-      Schedule
-    </button>
-    <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">
-      <a href="#faq-section">  FAQ </a>
-    </button>
-    <button class=" slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">
-     <a href="#team-section">  Team </a>
-    </button>
-    <a href="https://hcb.hackclub.com/donations/start/hammerhacks"
+    <!-- Desktop nav -->
+    <div class="desktop-nav">
+      <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30"><a href="#about"> About</a></button>
+      <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">Sponsors</button>
+      <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30">Schedule</button>
+      <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30"><a href="#faq-section">  FAQ </a></button>
+      <button class="slide-in text-2xl relative left-0 hover:text-blue-300 h-25 w-30"><a href="#team-section">  Team </a></button>
+      <a href="https://hcb.hackclub.com/donations/start/hammerhacks"
         class="text-2xl font-bold text-white bg-orange-400 border-4 border-orange-400 rounded-full px-6 py-2 absolute top-6 right-6 hover:bg-blue-800 hover:border-blue-800 transition">
-      Donate
-    </a>
+        Donate
+      </a>
+    </div>
+    <!-- Mobile nav -->
+    <div class="mobile-nav" style="display:none;">
+      <button id="mobile-menu-toggle" class="text-2xl font-bold text-white bg-orange-400 border-4 border-orange-400 rounded-full px-6 py-2 absolute top-6 right-6 hover:bg-blue-800 hover:border-blue-800 transition">
+        Menu
+      </button>
+      <div id="mobile-menu" class="mobile-menu-box" style="display:none; position:absolute; top:60px; right:16px; background:white; border-radius:1rem; box-shadow:0 2px 12px rgba(0,0,0,0.12); z-index:99; min-width:180px;">
+        <button class="block w-full text-left px-6 py-4 text-2xl border-b border-gray-200" onclick="location.href='#about'">About</button>
+        <button class="block w-full text-left px-6 py-4 text-2xl border-b border-gray-200" onclick="location.href='#'">Sponsors</button>
+        <button class="block w-full text-left px-6 py-4 text-2xl border-b border-gray-200" onclick="location.href='#'">Schedule</button>
+        <button class="block w-full text-left px-6 py-4 text-2xl border-b border-gray-200" onclick="location.href='#faq-section'">FAQ</button>
+        <button class="block w-full text-left px-6 py-4 text-2xl border-b border-gray-200" onclick="location.href='#team-section'">Team</button>
+        <a href="https://hcb.hackclub.com/donations/start/hammerhacks" class="block w-full text-left px-6 py-4 text-2xl font-bold text-white bg-orange-400 border-4 border-orange-400 rounded-full mt-2 hover:bg-blue-800 hover:border-blue-800 transition">Donate</a>
+      </div>
+    </div>
   </div>
   <div class="homepage caps">
     <div class="slide-in mx-auto w-auto">
@@ -86,7 +95,7 @@
 	  <p class="text-left text-1xl font-bold text-gray-800 mt-8 slide-in">
 	  From the HammerHacks team.. 
 	  </p>
-	  <img src="assets/signatures.png" class="signature-img"> 
+    <img src="assets/signatures.png" class="signature-img flex responsive-signature-img">
 	   
     </div>
   </section>
@@ -240,7 +249,7 @@
           <a href="https://www.linkedin.com/in/aaron-dam-a798512a5/" target="_blank" rel="noopener noreferrer">
             <img src="assets/headshots/AaronDam.jpeg" alt="Member 4" class="team-member-img team-member" data-desc="<strong>Aaron Dam</strong><br>Web Developer Likes → Basketball & Peanut Butter <br>Grade 12 @ Westmount SS" />
           </a>
-          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/unimashi-ugor-6409a5352/" target="_blank" rel="noopener noreferrer">
             <img src="assets/headshots/Unimashi.jpg" alt="Member 5" class="team-member-img team-member" data-desc="<strong>Unimashi Ugor</strong><br>Web Developer Likes → Roller Coasters, Computer Systems & Retro Gaming <br>Grade 11 @ Bishop Ryan CSS" />
           </a>
           <a href="https://www.linkedin.com/in/jasminemontrichard/" target="_blank" rel="noopener noreferrer">
@@ -273,7 +282,7 @@
           <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
             <img src="assets/headshots/AlexandraLima.png" alt="Member 14" class="team-member-img team-member" data-desc="<strong>Alexandra Lima</strong><br>Finance Lead Likes → Music, Tennis, Nintendo Games<br>Grade 12 @ St. Thomas More CSS" />
           </a>
-          <a href="https://www.linkedin.com/in/selena-nguyen-0b7287321/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/nand-shah-4884b5295/" target="_blank" rel="noopener noreferrer">
             <img src="assets/headshots/NandShah.png" alt="Member 15" class="team-member-img team-member" data-desc="<strong>Nand Shah</strong><br>Finance Coordinator Likes → Basketball & Hockey<br>Grade 11 @ Westmount SS" />
           </a>
         </div>
@@ -366,7 +375,39 @@
       }
     });
   });
-  
+
+  // Mobile nav logic
+  function handleMobileNav() {
+    var menuToggle = document.getElementById('mobile-menu-toggle');
+    var menuBox = document.getElementById('mobile-menu');
+    if (!menuToggle || !menuBox) return;
+    menuToggle.addEventListener('click', function() {
+      var expanded = menuBox.style.display === 'block';
+      if (expanded) {
+        menuBox.style.display = 'none';
+      } else {
+        menuBox.style.display = 'block';
+        menuBox.style.animation = 'expandMenu 0.3s cubic-bezier(.4,0,.2,1)';
+      }
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    // Responsive nav show/hide
+    function updateNavDisplay() {
+      var desktopNav = document.querySelector('.desktop-nav');
+      var mobileNav = document.querySelector('.mobile-nav');
+      if (window.innerWidth <= 768) {
+        if (desktopNav) desktopNav.style.display = 'none';
+        if (mobileNav) mobileNav.style.display = 'block';
+      } else {
+        if (desktopNav) desktopNav.style.display = 'flex';
+        if (mobileNav) mobileNav.style.display = 'none';
+      }
+    }
+    updateNavDisplay();
+    window.addEventListener('resize', updateNavDisplay);
+    handleMobileNav();
+  });
   </script>
 </body>
 
