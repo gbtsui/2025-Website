@@ -125,6 +125,7 @@ body{
   background-color: #263272;
   line-height: 1.6;
   color: black; 
+  background-color: white;
 }
 
 html {
@@ -132,7 +133,7 @@ html {
 }
 
 .head{
-  color:#fff;
+  color:#ffffff;
    width:auto;
    height: 100px;
    list-style: none;
@@ -185,6 +186,7 @@ body{
     height: auto;
     gap: 0.5rem;
     padding: 8px 0;
+    color: black;
   }
   .logo img {
     height: 40px;
