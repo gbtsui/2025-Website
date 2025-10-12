@@ -319,12 +319,60 @@
     });
   });
 
-  // Team member hover logic
+  // hover logic with text decoding animation
   var teamMembers = document.querySelectorAll('.team-member');
   var nameEl = document.getElementById('team-desc-name');
   var roleEl = document.getElementById('team-desc-role');
   var schoolEl = document.getElementById('team-desc-school');
   var bioEl = document.getElementById('team-desc-bio');
+
+function decodeAllText(elements, newTexts, duration) {
+  const chars = '#$%^&*+-=<>?';
+  const oldTexts = elements.map(el => el.textContent);
+  const maxLens = newTexts.map((txt, i) => Math.max(txt.length, oldTexts[i].length));
+  const startTime = performance.now();
+
+  function update(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(1, elapsed / duration);
+
+    elements.forEach((el, idx) => {
+      const newText = newTexts[idx];
+      const oldText = oldTexts[idx];
+      const len = maxLens[idx];
+      let display = '';
+
+      for (let i = 0; i < len; i++) {
+        if (progress < 1) {
+          // All characters scramble simultaneously until final reveal
+          // Once near the end, smoothly fade into final text
+          const settleChance = Math.pow(progress, 3); // smooth easing
+          if (Math.random() < settleChance) {
+            display += newText[i] || '';
+          } else {
+            display += chars[Math.floor(Math.random() * chars.length)];
+          }
+        } else {
+          display += newText[i] || '';
+        }
+      }
+
+      el.textContent = display;
+    });
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      elements.forEach((el, idx) => (el.textContent = newTexts[idx]));
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+function setTeamDesc(name, role, school, bio) {
+  decodeAllText([nameEl, roleEl, schoolEl, bioEl], [name, role, school, bio], 500);
+}
 
   teamMembers.forEach(function(member) {
     member.addEventListener('mouseenter', function() {
@@ -347,17 +395,11 @@
           role = roleAndDesc;
           bio = '';
         }
-        nameEl.innerHTML = strong ? strong.textContent : '';
-        roleEl.innerHTML = role;
-        schoolEl.innerHTML = school;
-        bioEl.innerHTML = bio;
+        setTeamDesc(strong ? strong.textContent : '', role, school, bio);
       }
     });
     member.addEventListener('mouseleave', function() {
-      nameEl.innerHTML = 'Hover over a team member';
-      roleEl.innerHTML = 'to see their role.';
-      schoolEl.innerHTML = 'School info will appear here.';
-      bioEl.innerHTML = 'Their description will appear here.';
+      setTeamDesc('Hover over a team member', 'to see their role.', 'School info will appear here.', 'Their description will appear here.');
     });
   });
 
