@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const nunito = Nunito({
-  weight: "200",
+  weight: "500",
   subsets: ["latin"]
 })
 
