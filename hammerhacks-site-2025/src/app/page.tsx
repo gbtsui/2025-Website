@@ -7,6 +7,7 @@ export default function HomePage() {
   return (
     <div className="caps">
         <Header/>
+        <AboutUs/>
     </div>
   )
 }
