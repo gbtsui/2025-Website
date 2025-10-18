@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function AboutUs() {
     return (
         <div className="about-us bg-gray-100 p-12 my-12">
