@@ -5,6 +5,7 @@ import AboutUs from "@/components/about-us";
 import HomepageComponent from "@/components/homepage";
 import RecapComponent from "@/components/recap";
 import SponsorsComponent from "@/components/sponsors";
+import FAQComponent from "@/components/faq";
 
 
 export default function HomePage() {
@@ -15,6 +16,8 @@ export default function HomePage() {
         <AboutUs/>
         <RecapComponent/>
         <SponsorsComponent/>
+        <br/>
+        <FAQComponent/>
     </div>
   )
 }

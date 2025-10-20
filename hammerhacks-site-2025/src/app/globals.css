@@ -19,3 +19,58 @@ body {
   color: var(--foreground);
   font-family: "Nunito";
 }
+
+.faq-item {
+  z-index:1;
+}
+
+.faq-item.expanded {
+  z-index: 2;
+}
+
+.faq-item.expanded .faq-gear-container {
+  z-index: 4;
+  position: relative;
+}
+
+.faq-gear-container:hover .faq-gear-img {
+  transform: scale(1.2);
+}
+
+.faq-item.expanded:not(.right) .faq-gear-container .faq-gear-img {
+  transform: scale(1.2) translateX(-1.5rem);
+  animation: spin-gear-left 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.faq-item.expanded .faq-gear-container .faq-gear-text {
+  transform: translate(5%, 0%) translateX(-1.5rem);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.faq-answer {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0%) scale(0.95);
+  transition: opacity 0.4s, transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.faq-item.expanded .faq-answer {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(62%) translateY(0%) scale(1);
+}
+
+.faq-item.right.expanded .faq-gear-container .faq-gear-img {
+  transform: scale(1.2) translateX(1.5rem);
+  animation: spin-gear-right 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.faq-item.right.expanded .faq-gear-container .faq-gear-text {
+  transform: translate(5%, 0%) translateX(1.5rem);
+}
+
+.faq-item.right.expanded .faq-answer {
+  transform: translateX(-62%) translateY(0%) scale(1);
+  left: auto;
+  right: 0;
+}
