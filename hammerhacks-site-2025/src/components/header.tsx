@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-white h-30 flex position-sticky t-0 b-10px l-0 gap-1.5 z-100 relative " id="header">
+      <header className="bg-white/30 backdrop-blur-lg h-30 flex sticky top-0 b-10px l-0 gap-1.5 z-100" id="header">
         <div className="pl-6 pr-4 flex items-center">
           <a href="/">
             <Image
