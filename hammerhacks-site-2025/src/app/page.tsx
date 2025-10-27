@@ -7,6 +7,7 @@ import RecapComponent from "@/components/recap";
 import SponsorsComponent from "@/components/sponsors";
 import FAQComponent from "@/components/faq";
 import MeetTheTeamComponent from "@/components/meet-the-team";
+import FooterComponent from "@/components/footer";
 
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
         <br/>
         <FAQComponent/>
         <MeetTheTeamComponent/>
+        <FooterComponent/>
     </div>
   )
 }
